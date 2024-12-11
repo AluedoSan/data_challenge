@@ -1,0 +1,29 @@
+form{
+    background-color: #00b8e2;
+    padding: 2%;
+}
+
+input{
+    padding: 1%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+button{
+    color: white;
+    border: 1px solid white;
+    background: none;
+    padding: 1%;
+    cursor: pointer;
+}

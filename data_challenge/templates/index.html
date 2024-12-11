@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Data</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" name="first" placeholder="First name">
+        <input type="text" name="last" placeholder="Last name">
+        <input type="number" name="participation" placeholder="Participation">
+        <button type="submit">Send</button>
+    </form>
+    <h1>DATA</h1>
+    <main>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Participation</th>
+            </tr>
+            {% for x in data %}
+            <tr>
+                <td>{{x[0]}}</td>
+                <td>{{x[1]}}</td>
+                <td>{{x[2]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div>
+            {{ fig|safe }}
+        </div> 
+    </main>   
+</body>
+</html>
